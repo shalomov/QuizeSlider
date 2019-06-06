@@ -1,0 +1,331 @@
+.slider-head {
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
+    background-color: #085ac1;
+}
+
+.slider-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    &#first {
+        padding-top: 40px;
+        padding-bottom: 70px;
+    }
+    div {
+        width: 100%;
+    }
+}
+
+#first {
+    .slider-title {
+        text-transform: uppercase;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.slider-title {
+    font-size: 45px;
+    line-height: 65px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.survey-header {
+    img {
+        margin-bottom: 40px;
+        height: 150px;
+    }
+}
+#first {
+    .survey-header {
+        img {
+            height: 300px;
+        }
+    }  
+}
+.slider-btn {
+    background-color: #ff6800;
+    font-size: 20px;
+    line-height: 20px;
+    justify-content: center;
+    color: #fff;
+    transition: .3s;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+    &#prev {
+        margin-right: 15px;
+        opacity: 1;
+    }
+	&:hover {
+		opacity: .8;
+	}
+}
+
+button:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+.question-row {
+    text-align: left;
+    padding: 10px 5px;
+    .choise {
+        font-size: 24px;
+        margin-left: 15px;
+    }
+    &:not(:first-child) {
+        border-top: 1px solid #e6e6e6;
+    }
+}
+.final-slide {
+    #contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .slider-btn {
+            padding: 25px 67px;
+        }
+    }
+    .final-subtitle {
+        font-weight: 300;
+    }
+    .final-title {
+        margin-bottom: 25px;
+    }
+    .form-title {
+        font-size: 20px;
+        line-height: 36px;
+        margin-bottom: 45px;
+        max-width: 400px;
+    }
+    .form-row {
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-flow: row wrap;
+        align-items: stretch;
+        input {
+            padding: 25px 30px;
+            background-color: #085ac1;
+            border: 1px solid #fff;
+            flex: 1;
+            color: #fff;
+        }
+        input::placeholder {
+            color: #fff;
+        }
+    }
+    .survey-body {
+        background-color: #085ac1;
+        color: #fff;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        &.offer-slide {
+            background-color: #fff;
+            padding: 0;
+            .col-wrapp {
+                display: flex;
+                max-width: 420px;
+                flex-flow: wrap;
+                justify-content: center;
+            }
+            .slider-title {
+                color: #000;
+            }
+        }
+    }
+    .survey-header {
+        .slider-title {
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+    }
+}
+.footer-desc {
+    .footer-link {
+        color: #085ac1;
+        text-decoration: underline;
+        font-weight: 600;
+    }
+}
+
+@media (min-width: 320px) {
+    .slider-wrapper {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .survey-header {
+        img {
+            margin-bottom: 15px;
+        }
+    }
+    .slider-title {
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+    .question-row {
+        margin-bottom: 15px;
+        .choise {
+            font-size: 15px;
+            margin-left: 15px;
+        }
+    }
+    .slider-btn {
+        padding: 15px 30px;
+    }
+    .final-slide {
+        .survey-body {
+            padding: 10px;
+            margin-bottom: 20px;
+            &.offer-slide {
+                .col-wrapp {
+                    padding: 0 0;
+                }
+            }
+        }
+    }
+    .final-slide {
+        .final-subtitle {
+            font-size: 22px;
+            margin-bottom: 30px;
+        }
+        .form-row {
+            input {
+                padding: 15px;
+                margin-bottom: 10px;
+                &:nth-child(2) {
+                    margin-right: 0;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+    .final-slide {
+        .form-title {
+            margin-bottom: 25px;
+            line-height: 30px;
+        }
+    }
+    .final-slide {
+        #contact-form {
+            .slider-btn {
+                padding: 15px 30px;
+            }
+        }
+    }
+    .footer-desc {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .final-slide {
+        .survey-header {
+            .slider-title {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+@media (min-width: 440px) { 
+    .final-slide {
+        .form-row {
+                input {
+                        &:nth-child(2) {
+                        margin-right: 0;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+}
+
+
+@media (min-width: 1024px) {
+    .slider-wrapper {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+    .survey-header {
+        img {
+            margin-bottom: 40px;
+        }
+    }
+    .slider-title {
+        font-size: 45px;
+        line-height: 65px;
+        margin-bottom: 60px;
+    }
+    .question-row {
+        margin-bottom: 25px;
+        .choise {
+            font-size: 24px;
+            margin-left: 15px;
+        }
+    }
+    .slider-btn {
+        padding: 25px 100px;
+    }
+    .final-slide {
+        .survey-body {
+            padding: 50px 110px;
+            margin-bottom: 50px;
+            &.offer-slide {
+                .col-wrapp {
+                    padding: 0 30px;
+                }
+            }
+        }
+    }
+    .final-slide {
+        .form-row {
+            input {
+                padding: 25px 30px;
+                &:nth-child(2) {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    .final-slide {
+        .form-title {
+            margin-bottom: 45px;
+            line-height: 36px;
+        }
+    }
+    .final-slide {
+        #contact-form {
+            .slider-btn {
+                padding: 25px 67px;
+            }
+        }
+    }
+    .footer-desc {
+        font-size: 22px;
+        line-height: 40px;
+    }
+    .final-slide {
+        .survey-header {
+            .slider-title {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
